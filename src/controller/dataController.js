@@ -25,9 +25,9 @@ const getData = async (req, res) => {
 
 const updateData = async (req, res) => {
   try {
-    const { id, updateData } = req.body
+    const { id, data } = req.body
     
-    const updatedData = await Data.findByIdAndUpdate(id, updateData, { new: true })
+    const updatedData = await Data.findByIdAndUpdate(id, data, { new: true })
 
     return res.json({ message: 'success',  updatedData })
   } catch (error) {
