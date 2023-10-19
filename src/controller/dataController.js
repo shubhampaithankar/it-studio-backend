@@ -19,7 +19,7 @@ const getData = async (req, res) => {
     const data = await Data.find()
     return res.json({ message: 'success', data })
   } catch (error) {
-    return res.status(500).json({ error: 'Error retrieving data' })
+    return res.status(500).json({ error: 'Error retrieving data', message: error.message })
   }
 }
 
@@ -31,7 +31,7 @@ const updateData = async (req, res) => {
 
     return res.json({ message: 'success',  updatedData })
   } catch (error) {
-    return res.status(500).json({ error: 'Error updating data' })
+    return res.status(500).json({ error: 'Error updating data', message: error.message })
   }
 }
 
@@ -43,7 +43,7 @@ const deleteData = async (req, res) => {
 
     return res.json({ message: 'Data deleted and renumbered' })
   } catch (error) {
-    return res.status(500).json({ error: 'Error renumbering data' })
+    return res.status(500).json({ error: 'Error renumbering data', message: error.message })
   }
 }
 
