@@ -1,18 +1,19 @@
 # THE IT STUDIO BACKEND
 [Hosted on Render](https://it-studio-backend-kgev.onrender.com)
 
-# Routes
-## GET DATA (get)
-> data/get-all
+## ROUTES
 
-## CREATE DATA (post)
-> data/get-all
+### GET ALL DATA (get)
+- data/get-all
 
-## UPDATE DATA (post)
-> data/get-all
+### CREATE DATA (post)
+- data/create
 
-## DELETE DATA (post)
-> data/delete
+### UPDATE DATA (post)
+- data/update
 
-## SEND EMAIL (post)
-> email/send
+### DELETE DATA (post)
+- data/delete
+
+### SEND EMAIL (post)
+- email/send
